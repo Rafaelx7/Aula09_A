@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IFSP</title>
+    <meta name="description" content="">
+    <meta name="author" content="Aluno">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <script type="text/javascript" src="javascript/menulateral.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/menulateral.css">
+    <link rel="stylesheet" type="text/css" href="./css/formGrid.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <nav id="menu">
+                <object width="100%" height="260px" data="menu.html"></object>
+            </nav>
+            <div id="topo">
+                <img src="./imagens/capa.png" />
+            </div>
+        </div>
+        <div class="item2">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="localizacao.html">Localização</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="item3">
+            <div class="container">
+                <h3 style="text-align: center;">Entrar</h3>
+                <form method="POST">
+                    <p>
+                        <label for="usuario"> Usuário</label>
+                        <input type="text" name="usuario" placeholder="Digite seu usuário" required />
+                    </p>
+                    <p>
+                        <label for="senha"> Senha</label>
+                        <input type="password" name="senha" placeholder="Digite sua senha" required />
+                        <br><a href="#">Esqueci minha senha</a> <br>
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar" style="width: 50%; position: relative; left: -25%;" />
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="item4">
+            <footer>
+                <object width="100%" data="rodape.html"></object>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
